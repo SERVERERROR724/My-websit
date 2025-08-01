@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+    }
+    .typing {
+      color: #ff4081;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 10px;
+      height: 30px;
+    }
+    .profile-pic {
+      display: block;
+      margin: 20px auto;
+      border-radius: 110%;
+      width: 280.1px;
+      height: 140px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+    .content ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .telegram-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0088cc;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 999;
+    }
+    .telegram-button img {
+      width: 60.2px;
+    }
+    .telegram-options {
+      position: fixed;
+      bottom: 80px;
+      right: 25px;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 998;
+    }
+    .telegram-options a {
+      background-color: #222;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      animation: slideUp 0.3s ease forwards;
+    }
+    .telegram-options img {
+      width: 18px;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="site-title">𝐒όн卂𝔫 Ữ℃𝓱Ꭵ𝐡A̴</h1>
+    <div class="typing" id="typing-text"></div>
+  </header>
+
+  <img src="https://i.ibb.co/9k96DnFV/be41e3df0d.jpg" alt="Profile Photo" class="profile-pic">
+
+  <div class="content">
+    <h2>ViP ইথিক্যাল হ্যাকিং কোর্স</h2>
+    <p>আপনি যদি নিজেকে একজন <strong>Cyber Security Expert</strong> হিসেবে গড়ে তুলতে চান তাহলে এই কোর্স আপনার জন্য।</p>
+    <p>এই কোর্সের মাধ্যমে আপনি শিখবেন:</p>
+    <ul>
+      <li>✅ কিভাবে Ethical Hacking কাজ করে</li>
+      <li>✅ Website Vulnerability Testing</li>
+      <li>✅ Android Hacking (Basic to Advanced)</li>
+      <li>✅ Facebook Account Security</li>
+      <li>✅ Phishing, Brute Force, Keylogger Tool Use</li>
+      <li>✅ IP Tracking, Location Finding</li>
+      <li>✅ WiFi Hacking with Android & PC</li>
+      <li>✅ Bug Hunting Guide</li>
+      <li>✅ Practical Live Class + PDF</li>
+      <li>✅ Lifetime Support & Update</li>
+    </ul> <h2>আমাদের সাথে যোগাযোগ করুন</h2>
+  </div>
+
+  <footer>© 2025 developer boy S.S server error</footer>
+
+  
+  <div class="telegram-button" onclick="toggleOptions()">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+  </div>
+
+  
+  <div class="telegram-options" id="telegram-options">
+    
+    <a href="https://t.me/S_S_SERVER_ERROR" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"> Channel
+    </a>
+   
+    <a href="https://t.me/SERVER_ERROR_OWNER" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"> Live Chat
+    </a>
+  </div>
+
+  <script>
+    let optionsVisible = false;
+    function toggleOptions() {
+      const options = document.getElementById('telegram-options');
+      options.style.display = optionsVisible ? 'none' : 'flex';
+      optionsVisible = !optionsVisible;
+    }
+
+    const text = "S.S Server Error community";
+    const typingEl = document.getElementById("typing-text");
+    let index = 0;
+    function type() {
+      typingEl.textContent = text.slice(0, index++);
+      if (index <= text.length) {
+        setTimeout(type, 100);
+      } else {
+        index = 0;
+        setTimeout(type, 2000);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
